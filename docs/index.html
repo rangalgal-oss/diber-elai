@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>דבר אליי — תמלול עברית מקומי</title>
 <meta name="description" content="דבר אליי — אפליקציית הכתבה (דיבור לטקסט) בעברית, מקומית ופרטית. מדברים, וזה נכתב בכל תוכנה." />
+<link rel="icon" href="icon.png" />
+<!-- Open Graph / link preview (WhatsApp, Telegram, Facebook, etc.) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rangalgal-oss.github.io/diber-elai/" />
+<meta property="og:site_name" content="דבר אליי" />
+<meta property="og:locale" content="he_IL" />
+<meta property="og:title" content="דבר אליי — תמלול עברית מקומי ופרטי" />
+<meta property="og:description" content="פשוט מדברים — וזה נכתב בכל תוכנה. הכתבה בעברית שרצה על המחשב שלך, בלי אינטרנט ובלי ענן. חינם ל-Windows." />
+<meta property="og:image" content="https://rangalgal-oss.github.io/diber-elai/og-image.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="דבר אליי — תמלול עברית מקומי ופרטי" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="דבר אליי — תמלול עברית מקומי ופרטי" />
+<meta name="twitter:description" content="פשוט מדברים — וזה נכתב בכל תוכנה. חינם ל-Windows." />
+<meta name="twitter:image" content="https://rangalgal-oss.github.io/diber-elai/og-image.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Heebo:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -90,6 +107,15 @@
     box-shadow: 0 0 14px rgba(192, 64, 245, 0.7);
     flex: 0 0 auto;
   }
+  /* real app icon used as the brand mark + hero visual */
+  .brandico { width: 30px; height: 30px; border-radius: 9px; flex: 0 0 auto; object-fit: cover; box-shadow: 0 0 14px rgba(192, 64, 245, 0.5); }
+  .art { position: relative; display: inline-flex; }
+  .hero-icon {
+    position: relative; z-index: 1; width: 300px; height: 300px; border-radius: 66px;
+    border: 2px solid var(--card-border-hot);
+    box-shadow: 0 26px 60px rgba(8, 4, 26, 0.55), 0 0 0 7px rgba(124, 63, 228, 0.10);
+  }
+  .pill.badge { position: absolute; bottom: 4px; right: -16px; z-index: 2; padding: 12px 20px; font-size: 18px; }
   .brand-name { font-family: var(--display); font-weight: 700; font-size: 19px; color: #fff; }
 
   .btn {
@@ -247,7 +273,7 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <div class="brand"><span class="orb"></span><span class="brand-name">דבר אליי</span></div>
+    <div class="brand"><img class="brandico" src="icon.png" alt="" /><span class="brand-name">דבר אליי</span></div>
     <!-- TODO: replace # with your download link (e.g. Google Drive) -->
     <a class="btn btn-primary hide-sm" href="#download">הורדה</a>
   </div>
@@ -274,12 +300,14 @@
 
       <div class="stage" aria-hidden="true">
         <div class="stage-glow"></div>
-        <div class="pill">
-          <svg class="mic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
-          <span>מאזין</span>
-          <span class="dots"><i></i><i></i><i></i></span>
+        <div class="art">
+          <img class="hero-icon" src="icon.png" alt="דבר אליי" />
+          <span class="pill badge">
+            <svg class="mic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+            <span>מאזין</span>
+            <span class="dots"><i></i><i></i><i></i></span>
+          </span>
         </div>
-        <span class="stage-caption">הבועה הצפה — תמיד בהישג קליק</span>
       </div>
     </div>
   </section>
@@ -441,7 +469,7 @@
 
 <footer>
   <div class="wrap foot-inner">
-    <div class="brand"><span class="orb"></span><span class="brand-name">דבר אליי</span></div>
+    <div class="brand"><img class="brandico" src="icon.png" alt="" /><span class="brand-name">דבר אליי</span></div>
     <p class="credits">תמלול עברית מקומי ופרטי, נבנה על מודל העברית של ivrit.ai ו‑OpenAI Whisper (רישיון Apache‑2.0). פותח על ידי רן. כרגע ל‑Windows בלבד.</p>
   </div>
 </footer>
