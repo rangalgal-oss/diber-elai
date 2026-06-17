@@ -6,7 +6,7 @@
 
 ➡️ **[הגרסה האחרונה / Latest release](https://github.com/rangalgal-oss/diber-elai/releases/latest)**
 
-- **גרסה מלאה** (`DiberElai-Setup-Full.exe`, ~1.6GB) — כולל המודל, מוכן מיד, עובד בלי אינטרנט. **מומלצת.**
+- **גרסה מלאה** (`DiberElai-Setup-Full.exe`, ~860MB) — כולל המודל, מוכן מיד, עובד בלי אינטרנט. **מומלצת.**
 - **גרסה קלה** (`DiberElai-Setup-Light.exe`, ~76MB) — מוריד את המודל בהפעלה הראשונה.
 
 אם Windows מציג "Windows protected your PC" — לחצו **More info → Run anyway** (התוכנה עדיין לא חתומה דיגיטלית).
